@@ -14,3 +14,7 @@ export class AppComponent {
   //git add . <-- grabs all the new stuff
   //git commit -m "first commit"
   //git push -u origin master
+
+  //git publish commands
+  //ng build --prod --base-href "/skill-trade/"
+  //npx ngh --name="JordanBWilson" --email=jordanblairwilson@gmail.com --no-silent --dir=dist/skill-trade
