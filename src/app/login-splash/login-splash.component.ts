@@ -18,11 +18,16 @@ export class LoginSplashComponent implements OnInit {
   // public isPositioned: boolean = false;
 
   email = new FormControl('', [Validators.required, Validators.email]);
+  password = new FormControl('', [Validators.required]);
+  hide = true;
 
-  getErrorMessage() {
+  getEmailErrorMessage() {
     return this.email.hasError('required') ? 'You must enter a value' :
-        this.email.hasError('email') ? 'Not a valid email' :
-            '';
+        this.email.hasError('email') ? 'Not a valid email' : '';
+  }
+
+  getPassWordErrorMessage() {
+    return this.email.hasError('required') ? 'You must enter a value' : '';
   }
 
 

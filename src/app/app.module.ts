@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {MatIconModule} from '@angular/material/icon';
 import {
   //MatAutocompleteModule,
   MatBadgeModule,
@@ -19,7 +20,7 @@ import {
   MatDividerModule,
   MatExpansionModule,
   MatGridListModule,
-  MatIconModule,
+  //MatIconModule,
   MatInputModule,
   MatListModule,
   MatMenuModule,
@@ -40,7 +41,7 @@ import {
   MatTabsModule,
   MatToolbarModule,
   MatTooltipModule,
-  MatTreeModule,
+  MatTreeModule
 } from '@angular/material';
 
 
@@ -87,7 +88,7 @@ import {
     MatTabsModule,
     MatTooltipModule,
     MatTreeModule,
-    MatBadgeModule,
+    MatBadgeModule
   ],
   exports: [
     MatToolbarModule,
@@ -124,7 +125,7 @@ import {
     MatTabsModule,
     MatTooltipModule,
     MatTreeModule,
-    MatBadgeModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

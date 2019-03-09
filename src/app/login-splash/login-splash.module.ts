@@ -6,7 +6,10 @@ import { LoginSplashRoutingModule } from './login-splash-routing.module';
 import { LoginSplashComponent } from './login-splash.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material';
+import { MatInputModule } from '@angular/material';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import {MatInputModule} from '@angular/material';
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatIconModule,
+    MatButtonModule,
+    MatCardModule
   ]
 })
 export class LoginSplashModule { }
