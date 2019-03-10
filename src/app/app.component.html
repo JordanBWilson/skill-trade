@@ -5,13 +5,29 @@
 
     <div id="menu-width">
 
-    <span>Skill Trade</span>
+    <span class="noSelect" *ngIf="!IsLogin" routerLink="/landing">Skill Trade</span>
+    <span class="noSelect" *ngIf="IsLogin">Skill Trade</span>
+
+    <span *ngIf="!IsLogin" class="title-menu noSelect" mat-icon-button [matMenuTriggerFor]="landingMenu">
+      <mat-icon>supervised_user_circle</mat-icon>
+    </span>
+
+    <mat-menu #landingMenu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>person_add</mat-icon>
+          <span>Sign Up</span>
+        </button>
+        <button mat-menu-item routerLink="/login-in">
+          <mat-icon>person</mat-icon> <!--portrait-->
+          <span>Login</span>
+        </button>
+    </mat-menu>
   
-    <span class="title-menu" mat-icon-button [matMenuTriggerFor]="menu">
+    <span *ngIf="IsLogin" class="title-menu noSelect" mat-icon-button [matMenuTriggerFor]="mainMenu">
       <mat-icon>more_vert</mat-icon>
     </span>
 
-    <mat-menu #menu="matMenu">
+    <mat-menu #mainMenu="matMenu">
       <button mat-menu-item>
         <mat-icon>settings</mat-icon>
         <span>My Account</span>

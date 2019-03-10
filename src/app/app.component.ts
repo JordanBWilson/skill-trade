@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Skill Trade';
+
+  IsLogin = false;
 }
 
   //git commands
@@ -14,6 +16,8 @@ export class AppComponent {
   //git add . <-- grabs all the new stuff
   //git commit -m "first commit"
   //git push -u origin master
+
+  //ng generate component <-- make a new component
 
   //git publish commands
   //ng build --prod --base-href "/skill-trade/"

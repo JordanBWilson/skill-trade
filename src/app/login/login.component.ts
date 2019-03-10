@@ -5,11 +5,11 @@ import {ErrorStateMatcher} from '@angular/material/core';
 
 
 @Component({
-  selector: 'app-login-splash',
-  templateUrl: './login-splash.component.html',
-  styleUrls: ['./login-splash.component.scss']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.scss']
 })
-export class LoginSplashComponent implements OnInit {
+export class LoginComponent implements OnInit {
 
   constructor(private weatherApi: WeatherApiService) { }
 

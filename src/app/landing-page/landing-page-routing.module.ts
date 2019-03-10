@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LoginSplashComponent } from './login-splash.component';
+import { LandingPageComponent } from './landing-page.component';
 
 
 
@@ -8,7 +8,7 @@ import { LoginSplashComponent } from './login-splash.component';
 const routes: Routes = [
   {
     path: '',
-    component: LoginSplashComponent
+    component: LandingPageComponent
   }
 ];
 
@@ -16,4 +16,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class LoginSplashRoutingModule { }
+export class LandingPageRoutingModule { }

@@ -2,11 +2,14 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules  } from '@angular/router';
 
 const routes: Routes = [
-  { path: 'sign-in', 
-    loadChildren: './login-splash/login-splash.module#LoginSplashModule'
+  { path: 'landing', 
+    loadChildren: './landing-page/landing-page.module#LandingPageModule'
+  },
+  { path: 'login-in', 
+    loadChildren: './login/login.module#LoginModule'
   },
   { path: '',   
-    redirectTo: '/sign-in', 
+    redirectTo: '/landing', 
     pathMatch: 'full' 
   },
   { path: '**', 
