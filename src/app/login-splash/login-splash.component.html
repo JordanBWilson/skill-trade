@@ -3,20 +3,20 @@
 
     <mat-card-header>
 
-        <mat-card-title>Login to Skill Trade</mat-card-title>
+        <mat-card-title><h1>Login to Skill Trade</h1></mat-card-title>
 
     </mat-card-header>
 
   <div class="login-container">
 
-    <mat-form-field>
+    <mat-form-field class="input-spacing">
       <input matInput placeholder="Enter your email" [formControl]="email" required>
       <mat-error *ngIf="email.invalid">{{getEmailErrorMessage()}}</mat-error>
     </mat-form-field>
 
-    <mat-form-field>
+    <mat-form-field class="input-spacing">
       <input matInput placeholder="Enter your password" [formControl]="password" [type]="hide ? 'password' : 'text'" required>
-      <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      <mat-icon class="visibilityIcon" matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
     </mat-form-field>
 
     <button mat-flat-button color="primary">Submit</button>
