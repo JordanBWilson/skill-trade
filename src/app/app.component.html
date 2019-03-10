@@ -4,9 +4,10 @@
   <mat-toolbar color="primary">
 
     <div id="menu-width">
-
-    <span class="noSelect" *ngIf="!IsLogin" routerLink="/landing">Skill Trade</span>
-    <span class="noSelect" *ngIf="IsLogin">Skill Trade</span>
+    <span *ngIf="isLogoVisible" class="logo-container">
+      <span class="noSelect" *ngIf="!IsLogin" routerLink="/landing"><mat-icon class="logo">group_work</mat-icon></span> <!--Skill Trade-->
+      <span class="noSelect" *ngIf="IsLogin"><mat-icon>group_work</mat-icon></span>
+    </span>
 
     <span *ngIf="!IsLogin" class="title-menu noSelect" mat-icon-button [matMenuTriggerFor]="landingMenu">
       <mat-icon>supervised_user_circle</mat-icon>
@@ -51,7 +52,7 @@
 
 <div class="route-spacing">
 
-    <router-outlet></router-outlet>
+    <router-outlet (activate)="componentAdded($event)"></router-outlet>
 
 </div>
 

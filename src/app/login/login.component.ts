@@ -11,7 +11,7 @@ import {ErrorStateMatcher} from '@angular/material/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private weatherApi: WeatherApiService) { }
+  // constructor(private weatherApi: WeatherApiService) { }
 
   // private weatherForcast: Array<object> = [];
   // private pos: object;
@@ -20,6 +20,7 @@ export class LoginComponent implements OnInit {
   email = new FormControl('', [Validators.required, Validators.email]);
   password = new FormControl('', [Validators.required]);
   hide = true;
+  page = 'Login';
 
   getEmailErrorMessage() {
     return this.email.hasError('required') ? 'You must enter a value' :
@@ -27,7 +28,7 @@ export class LoginComponent implements OnInit {
   }
 
   getPassWordErrorMessage() {
-    return this.email.hasError('required') ? 'You must enter a value' : '';
+    return this.password.hasError('required') ? 'You must enter a value' : '';
   }
 
 

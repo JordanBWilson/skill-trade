@@ -9,7 +9,21 @@ export class AppComponent {
   title = 'Skill Trade';
 
   IsLogin = false;
+  isLogoVisible = true;
+
+  componentAdded(event) {
+
+    if (event.page === 'Landing') {
+
+      this.isLogoVisible = false;
+    }
+    else {
+      this.isLogoVisible = true;
+    }
+  }
 }
+
+
 
   //git commands
   //git init <-- starts looking for new changes. used before you work
