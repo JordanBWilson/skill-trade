@@ -9,18 +9,23 @@
       <span class="noSelect" *ngIf="IsLogin"><mat-icon>group_work</mat-icon></span>
     </span>
 
+    <span *ngIf="!isLogoVisible">
+
+      <span class="noSelect" *ngIf="!IsLogin" routerLink="/landing"><mat-icon>group_work</mat-icon> Trade</span>
+    </span>
+
     <span *ngIf="!IsLogin" class="title-menu noSelect" mat-icon-button [matMenuTriggerFor]="landingMenu">
       <mat-icon>supervised_user_circle</mat-icon>
     </span>
 
     <mat-menu #landingMenu="matMenu">
-        <button mat-menu-item>
-          <mat-icon>person_add</mat-icon>
-          <span>Sign Up</span>
-        </button>
         <button mat-menu-item routerLink="/login-in">
           <mat-icon>person</mat-icon> <!--portrait-->
           <span>Login</span>
+        </button>
+        <button mat-menu-item routerLink="/sign-up">
+          <mat-icon>person_add</mat-icon>
+          <span>Sign Up</span>
         </button>
     </mat-menu>
   

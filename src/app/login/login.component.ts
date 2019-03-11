@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/forms';
+import {FormControl, Validators} from '@angular/forms';
 import { WeatherApiService } from '../weather-api-service/weather-api.service'
-import {ErrorStateMatcher} from '@angular/material/core';
 
 
 @Component({

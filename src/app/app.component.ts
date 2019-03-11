@@ -31,7 +31,7 @@ export class AppComponent {
   //git commit -m "first commit"
   //git push -u origin master
 
-  //ng generate component <-- make a new component
+  //ng generate component _Name_<-- make a new component
 
   //git publish commands
   //ng build --prod --base-href "/skill-trade/"

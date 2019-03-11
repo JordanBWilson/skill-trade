@@ -8,6 +8,9 @@ const routes: Routes = [
   { path: 'login-in', 
     loadChildren: './login/login.module#LoginModule'
   },
+  { path: 'sign-up', 
+    loadChildren: './sign-up/sign-up.module#SignUpModule'
+  },
   { path: '',   
     redirectTo: '/landing', 
     pathMatch: 'full' 

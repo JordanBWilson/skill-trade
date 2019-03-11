@@ -43,13 +43,11 @@ import {
   MatTooltipModule,
   MatTreeModule
 } from '@angular/material';
-//import { LandingPageComponent } from './landing-page/landing-page.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    //LandingPageComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
